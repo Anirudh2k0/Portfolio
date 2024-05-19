@@ -1,0 +1,15 @@
+.project-card {
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+    .project-card:hover {
+    /* background-color: #915858; */
+    background-color: #6DC5D1;
+
+    .butt{
+      background-color: #FDE49E;
+      color: #DD761C;
+    }
+  
+    }
+
