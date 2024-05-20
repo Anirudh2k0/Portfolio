@@ -16,6 +16,7 @@ function Home() {
         <Box sx={{ mt: 5, px: 2, display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
           <Typography variant="h6">
             Welcome to my blog! I am Anirudh Kambhampati. I am an AI/RL guy working in the cloud. I also have expertise in VRLE and DevOps.
+            I am a go-getter and I believe in consistency and communication above all. 
           </Typography>
           <Typography variant="h6" sx={{ mt: 2 }}>
             You can explore my <Link component={RouterLink} to="/projects">projects</Link>. Feel free to <Link component={RouterLink} to="/contact">contact</Link> me.
