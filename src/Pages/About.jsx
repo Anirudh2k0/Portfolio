@@ -11,48 +11,56 @@ function About() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
-  const renderButton = () => (
+  const renderResume = () => (
     <Button sx={{ p: 0 }}>
       <Link href={resume} target="_blank" rel="noopener noreferrer" underline="none">
         View my resume
       </Link>
-    </Button>
+  </Button>
   );
+  
+  const renderCertifications = () => (
+    <Button sx={{p:0}}>
+      <Link href={'https://www.linkedin.com/in/anirudh-kambhampati-882b5a158/details/certifications/'}  target="_blank" rel="noopener noreferrer" underline="none">
+      View my Certifications
+      </Link>
+    </Button>
+  )
 
   return (
     <AnimatedPage>
-      <Grid container spacing={2} justifyContent="center">
-        <Grid item xs={12} sm={6}>
+      <Grid container spacing={1} justifyContent="center">
+        <Grid item xs={8} sm={4}>
           <Box
             component="img"
             src={Pic1}
             sx={{
-              width: '100%',
-              maxWidth: '50vh',
+              width: '80%',
+              maxWidth: '40vh',
               mx: 'auto',
               display: 'block'
             }}
           />
         </Grid>
-        <Grid item xs={12} sm={6}>
-          <Box
-            component="img"
-            src={Pic2}
-            sx={{
-              width: '100%',
-              maxWidth: '50vh',
-              mx: 'auto',
-              display: 'block'
-            }}
-          />
-        </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={8} sm={4}>
           <Box
             component="img"
             src={Pic3}
             sx={{
-              width: '100%',
-              maxWidth: '50vh',
+              width: '80%',
+              maxWidth: '40vh',
+              mx: 'auto',
+              display: 'block'
+            }}
+          />
+        </Grid>
+        <Grid item xs={8} sm={4}>
+          <Box
+            component="img"
+            src={Pic2}
+            sx={{
+              width: '80%',
+              maxWidth: '40vh',
               mx: 'auto',
               display: 'block'
             }}
@@ -71,9 +79,11 @@ function About() {
       >
         <div onMouseEnter={() => setButtonHover(true)} onMouseLeave={() => setButtonHover(false)}>
           {buttonHover ? (
-            <RotateAnimation>{renderButton()}</RotateAnimation>
+            <RotateAnimation>{renderResume()}</RotateAnimation>
+            // <RotateAnimation>{renderCertifications()}</RotateAnimation>
           ) : (
-            renderButton()
+            renderResume()
+
           )}
         </div>
       </Box>
