@@ -19,6 +19,9 @@ function Contact() {
           <Typography sx={{p:1}}>
             Github: <Link target="_blank" href="https://github.com/Anirudh2k0/">Anirudh Github</Link>
           </Typography>
+          <Typography sx={{p:1}}>
+            Certifications: <Link href={'https://www.linkedin.com/in/anirudh-kambhampati-882b5a158/details/certifications/'}  target="_blank" rel="noopener noreferrer">View my Certifications</Link>
+          </Typography>
         </CardContent>
       </Card>
       </AnimatedPage>
