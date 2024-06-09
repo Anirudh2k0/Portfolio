@@ -5,7 +5,7 @@ function Contact() {
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '40vh' }}>
     <AnimatedPage>
-      <Card sx={{width:"80vh",display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+      <Card sx={{width:"80vh",display: 'flex', justifyContent: 'center', alignItems: 'center',boxShadow:2,borderRadius: '16px'}}>
         <CardContent>
           <Typography sx={{p:1}}>
             Email: anirudh.kambhampati2k0@gmail.com

@@ -1,4 +1,24 @@
 import { motion } from "framer-motion";
+import { keyframes } from '@emotion/react';
+import { styled } from '@mui/system';
+
+const bounce = keyframes`
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-5px);
+  }
+  60% {
+    transform: translateX(-3px);
+  }
+`;
+
+export const createAnimatedIcon = (IconComponent) => styled(IconComponent)`
+  animation: ${bounce} 3s infinite;
+`;
+
+
 
 const animations = {
   initial: { opacity: 0, x: 100 },
@@ -41,3 +61,5 @@ export const RotateAnimation = ({children}) => {
         </motion.div>
       );
 }
+
+

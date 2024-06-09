@@ -3,25 +3,10 @@ import { useParams } from 'react-router-dom'
 import { projectsInfo } from './projectsInfo'
 import { Typography,Box, Link, Button,Stack } from '@mui/material';
 import { Link as RouterLink } from "react-router-dom";
-import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
-import { keyframes } from '@emotion/react';
-import { styled } from '@mui/system';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { createAnimatedIcon } from '@/components/Animation/Animations';
 
-const bounce = keyframes`
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateX(0);
-  }
-  40% {
-    transform: translateX(-5px);
-  }
-  60% {
-    transform: translateX(-3px);
-  }
-`;
-
-const AnimatedIcon = styled(KeyboardBackspaceIcon)`
-  animation: ${bounce} 3s infinite;
-`;
+const BackAnimatedArrow = createAnimatedIcon(ArrowBackIcon)
 
 function ProjectDetails() {
 
@@ -47,7 +32,7 @@ function ProjectDetails() {
             <Button variant='outlined'>
             <Link component={RouterLink} to="/projects" underline="none">
       <Stack alignItems="center" direction="row">
-        <AnimatedIcon />Back
+        <BackAnimatedArrow />Back
       </Stack>
     </Link>
             </Button>

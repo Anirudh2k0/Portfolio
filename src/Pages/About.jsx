@@ -2,14 +2,16 @@ import React, { useState } from 'react';
 import { resume } from '@/data/themes';
 import { Pic1, Pic2,Pic3 } from '@/images';
 import { Link as RouterLink } from "react-router-dom";
-import { Button, Link, Box, Typography, List, Grid, useMediaQuery,ListItem } from '@mui/material';
+import { Button, Link, Box, Typography, List, Grid, useMediaQuery,ListItem,Stack } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import { AnimatedPage, RotateAnimation } from '@/components/Animation/Animations';
+import { AnimatedPage, RotateAnimation, createAnimatedIcon } from '@/components/Animation/Animations';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 function About() {
   const [buttonHover, setButtonHover] = useState(false);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const AnimatedIcon = createAnimatedIcon(ArrowForwardIcon);
 
   const renderResume = () => (
     <Button sx={{ p: 0 }}>
@@ -92,12 +94,24 @@ function About() {
         <Typography>
           I worked for Cognizant Technological Solutions at Chennai, India as a Programmer Analyst Trainee where my responsibilities included:
           <List>
-            <ListItem>* Understand functional and non-functional application security requirements.</ListItem>
-            <ListItem>* Develop proof of concept.</ListItem>
-            <ListItem>* Create or update DIT(directory information tree) object class schema definition and indexes.</ListItem>
-            <ListItem>* Develop Deployment instructions</ListItem>
-            <ListItem>* Develop SDLC artifacts based on customer SDLC process.</ListItem>
-            <ListItem>* Develop POCs for solution design realization.</ListItem>
+          <ListItem><Stack alignItems="center" direction="row">
+            <AnimatedIcon />Understand functional and non-functional application security requirements.
+          </Stack></ListItem>
+          <ListItem><Stack alignItems="center" direction="row">
+            <AnimatedIcon />Develop proof of concept.
+          </Stack></ListItem>
+          <ListItem><Stack alignItems="center" direction="row">
+            <AnimatedIcon />Create or update DIT(directory information tree) object class schema definition and indexes.
+          </Stack></ListItem>
+          <ListItem><Stack alignItems="center" direction="row">
+            <AnimatedIcon /> Develop Deployment instructions.
+          </Stack></ListItem>
+          <ListItem><Stack alignItems="center" direction="row">
+            <AnimatedIcon />Develop SDLC artifacts based on customer SDLC process.
+          </Stack></ListItem>
+          <ListItem><Stack alignItems="center" direction="row">
+            <AnimatedIcon />Develop POCs for solution design realization.
+          </Stack></ListItem>
           </List>
         </Typography>
       </Box>
