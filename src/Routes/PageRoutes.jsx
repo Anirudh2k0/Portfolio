@@ -5,6 +5,7 @@ import FullScreenLoader from "@/components/Loader/FullScreenLoader";
 import Home from "@/Pages/Home";
 import About from "@/Pages/About";
 import Contact from "@/Pages/Contact";
+import Papers from "@/Pages/Papers/Papers"
 import Projects from "@/Pages/Projects/Projects";
 import ProjectDetails from "@/Pages/Projects/ProjectDetails";
 function PageRoutes(){
@@ -34,6 +35,10 @@ function PageRoutes(){
                 element: <ProjectDetails />
             },
             ]
+        },
+        {
+            path: "/papers",
+            element: <Papers />
         },
         {
             path: "/contact",

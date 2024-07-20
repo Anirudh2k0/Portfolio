@@ -13,6 +13,10 @@ export const navbarLinks = [
     link: '/projects',
    },
    {
+    label: 'Papers',
+    link: '/papers',
+   },
+   {
     label: 'Contact',
     link: '/contact',
    }
