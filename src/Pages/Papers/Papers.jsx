@@ -14,6 +14,7 @@ function Papers() {
             <div>
             <Typography sx={{mt:2}}><strong>Title: </strong> {item.title}</Typography>
             <Typography><strong>Status: </strong> {item.status}</Typography>
+            <Typography><strong>Venue: </strong> {item.venue}</Typography>
             </div>
           ))
         }
