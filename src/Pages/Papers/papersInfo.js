@@ -12,7 +12,7 @@ export const papersInfo = [
     {
         "title": "Automation of News Content Curation and Storytelling for Local Newsrooms ",
         "status": "Published",
-        "venue": "IEEE"
+        "venue": "IEEE DIKW 2024"
     },
     {
         "title": "RISE: Remote Instrumentation Science Environment for Learning-based Image Analytics",
