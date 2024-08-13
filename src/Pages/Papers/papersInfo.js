@@ -15,6 +15,11 @@ export const papersInfo = [
         "venue": "IEEE DIKW 2024"
     },
     {
+        "title": "Zeus: IoT-based Healthcare Data Management Security Framework for Remote Patient Monitoring",
+        "status": "Accepted",
+        "venue": "Helathsec 2024, ACM conference"
+    },
+    {
         "title": "RISE: Remote Instrumentation Science Environment for Learning-based Image Analytics",
         "status": "Submitted",
         "venue": "TSC Journal"
@@ -24,10 +29,4 @@ export const papersInfo = [
         "status": "Submitted",
         "venue": "IEE CNC"
     },
-    {
-        "title": "Zeus: IoT-based Healthcare Data Management Security Framework for Remote Patient Monitoring",
-        "status": "Submitted",
-        "venue": "Helathsec 2024, ACM conference"
-    },
-   
 ]

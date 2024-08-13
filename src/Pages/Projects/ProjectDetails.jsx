@@ -10,36 +10,61 @@ const BackAnimatedArrow = createAnimatedIcon(ArrowBackIcon)
 
 function ProjectDetails() {
 
-    const { id } = useParams();
-    const [project, setProject] = useState(null);
-    useEffect(() => {
-        const currentProject = projectsInfo.find(item => item.id === parseInt(id));
-        setProject(currentProject);
-    },[id])
-  return (
-    <div>
-        <Typography m={1} component="h1" fontFamily={'"Helvetica Neue"'} sx={{display:'flex',justifyContent:'center'}}>
-            {project?.title}
-        </Typography>
-        <Typography>
-            {project?.info}
-        </Typography>
-        {project?.youtube.length>0 && <Link sx={{display:'flex',justifyContent:'center',m:1}}  href={project?.youtube} target="_blank" rel="noopener noreferrer">{project?.youtube}</Link>}
-        <div style={{ display: 'flex', justifyContent: 'center', maxHeight:"80vh",marginTop: '30px'}}>
-            <Box component="img" src={project?.images.flow} sx={{maxWidth:"50vh"}}/>
-        </div>
-        <span style={{display:'flex',flexDirection:'row-reverse',margin:'20px'}}>
-            <Button variant='outlined'>
-            <Link component={RouterLink} to="/projects" underline="none">
-      <Stack alignItems="center" direction="row">
-        <BackAnimatedArrow />Back
-      </Stack>
-    </Link>
-            </Button>
+  const { id } = useParams();
+  const [project, setProject] = useState(null);
 
-        </span>
-    </div>
-  )
+  useEffect(() => {
+      const currentProject = projectsInfo.find(item => item.id === parseInt(id));
+      setProject(currentProject);
+  }, [id, projectsInfo]);
+
+  if (!project) return <Typography>Loading...</Typography>;
+
+  return (
+      <div style={{ padding: '20px' }}>
+          <Typography m={2} component="h1" variant="h5" align="center">
+              {project.title}
+          </Typography>
+          <Typography mb={2} color="textSecondary">
+              Tools Used: {project.tools}
+          </Typography>
+          <Typography mb={2} variant="body1">
+              {project.info}
+          </Typography>
+          {project.youtube && project.youtube.length > 0 && (
+              <Link 
+                  sx={{ display: 'block', textAlign: 'center', mb: 2 }}  
+                  href={project.youtube} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+              >
+                  Watch on YouTube
+              </Link>
+          )}
+          <div style={{ display: 'flex', justifyContent: 'center', maxHeight: '80vh', margin: '20px 0' }}>
+              <Box 
+                  component="img" 
+                  src={project.images.flow} 
+                  sx={{ maxWidth: '100%', height: 'auto' }}
+                  alt={project.title}
+              />
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
+              <Button 
+                  variant="outlined" 
+                  color="primary" 
+                  component={RouterLink} 
+                  to="/projects" 
+                  sx={{ display: 'flex', alignItems: 'center' }}
+              >
+                  <Stack direction="row" alignItems="center">
+                      <BackAnimatedArrow />
+                      <Typography ml={1}>Back</Typography>
+                  </Stack>
+              </Button>
+          </div>
+      </div>
+  );
 }
 
 export default ProjectDetails
