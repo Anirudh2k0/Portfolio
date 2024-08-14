@@ -15,8 +15,7 @@ function Home() {
         </Grid>
         <Box sx={{ mt: 5, px: 2, display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
           <Typography variant="h6">
-            Welcome to my blog! I am Anirudh Kambhampati, a passionate Software Developer building scalable and efficient systems. I am an AI/RL guy working in the cloud. I have expertise in VRLE and DevOps.
-            I am a go-getter and I believe in consistency and communication above all. 
+          Welcome to my blog! I’m Anirudh Kambhampati, a dedicated Software Developer focused on building scalable, efficient systems. With expertise in AI, RL, and cloud technologies, I also specialize in VRLE and DevOps. I’m a go-getter who values consistency and communication. Recently, I defended my thesis on "Building Intelligent Systems using Reinforcement Learning for Scientific Experimentation and Immersive Learning."
           </Typography>
           <Typography variant="h6" sx={{ mt: 2 }}>
             You can explore my <Link component={RouterLink} to="/projects">projects</Link>. Feel free to <Link component={RouterLink} to="/contact">contact</Link> me.
