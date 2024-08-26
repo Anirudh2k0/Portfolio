@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
-import { Card,CardActions,CardContent,Button,Typography, CardMedia } from '@mui/material'
+import { Card,CardActions,CardContent,Button,Typography, Link } from '@mui/material'
 import ProjectModal from '../Modal/Modal'
 
 import './card.css'
@@ -20,15 +20,12 @@ function ProjectCard({project,index}) {
     <div style={{display:'flex',justifyContent:'space-around' }}>
     <Card sx={{ maxWidth: 300,p:1}} onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave} className="project-card" raised> 
-      {/* <CardMedia
-        sx={{ padding: "1em 1em 0 1em", objectFit: "contain",height:200 }}
-        image={project.images.card}
-        title={project.projet}
-      /> */}
+
       <img src={project.images.card} style={{height:undefined,aspectRatio:2,width:'100%'}}/>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {project.title}
+          <Link href={project.code} variant='body2' target='blank' m={1}>Code</Link>
         </Typography>
         <Typography variant="body2" color="text.secondary">
           {project.description}

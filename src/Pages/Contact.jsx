@@ -2,6 +2,7 @@ import React from 'react'
 import { Card, CardContent, Typography,Link } from '@mui/material'
 import {AnimatedPage} from '@/components/Animation/Animations'
 function Contact() {
+
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '40vh' }}>
     <AnimatedPage>

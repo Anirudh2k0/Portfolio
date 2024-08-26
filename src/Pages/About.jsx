@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { resume } from '@/data/themes';
 import { Pic1, Pic2,Pic3 } from '@/images';
 import { Link as RouterLink } from "react-router-dom";
@@ -12,6 +12,7 @@ function About() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const AnimatedIcon = createAnimatedIcon(ArrowForwardIcon);
+  const images = [Pic1,Pic2,Pic3];
 
   const renderResume = () => (
     <Button sx={{ p: 0 }}>
@@ -68,6 +69,7 @@ function About() {
             }}
           />
         </Grid>
+       
       </Grid>
 
       <Box

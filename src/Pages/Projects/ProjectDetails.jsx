@@ -23,10 +23,13 @@ function ProjectDetails() {
   return (
       <div style={{ padding: '20px' }}>
           <Typography m={2} component="h1" variant="h5" align="center">
-              {project.title}
+              <span>{project.title}</span>
           </Typography>
           <Typography mb={2} color="textSecondary">
               Tools Used: {project.tools}
+          </Typography>
+          <Typography mb={2} color="textSecondary">
+               Code: <Link href={project.code} target="blank">{project.code}</Link>
           </Typography>
           <Typography mb={2} variant="body1">
               {project.info}
