@@ -25,8 +25,8 @@ export const papersInfo = [
         "venue": "TSC Journal"
     },
     {
-        "title": "CyEscape: Virtual Reality Learning Environment with Pedagogical Agent guided Escape Rooms for CyberSecurity Education",
+        "title": "Adaptive Virtual Reality Learning Environment with a Reinforcement Learning-driven Pedagogical Agent",
         "status": "Submitted",
-        "venue": "IEE CNC"
+        "venue": "IEE CCNC"
     },
 ]
