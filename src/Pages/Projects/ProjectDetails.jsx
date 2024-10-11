@@ -18,7 +18,7 @@ function ProjectDetails() {
       setProject(currentProject);
   }, [id, projectsInfo]);
 
-  if (!project) return <Typography>Why would you manually change the URL? 👀</Typography>;
+  if (!project) return <Typography>Why did you manually change the URL? 👀</Typography>;
 
   return (
       <div style={{ padding: '20px' }}>
