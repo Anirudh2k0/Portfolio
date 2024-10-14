@@ -17,8 +17,8 @@ function ProjectCard({project,index}) {
   };
   const navigate = useNavigate();
   return (
-    <div style={{display:'flex',justifyContent:'space-around' }}>
-    <Card sx={{ maxWidth: 300,p:1}} onMouseEnter={handleMouseEnter}
+    <div style={{display:'flex',justifyContent:'space-around',textOverflow:'ellipsis' }}>
+    <Card sx={{ maxWidth: 300,maxHeight:500,p:1}} onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave} className="project-card" raised> 
 
       <img src={project.images.card} style={{height:undefined,aspectRatio:2,width:'100%'}}/>

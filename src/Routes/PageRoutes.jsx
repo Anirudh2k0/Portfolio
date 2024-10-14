@@ -15,7 +15,7 @@ function PageRoutes(){
             element: <Home />
         },
         {
-            path: "/",
+            path: "/*",
             element: <Navigate to="/home" />,
         },
         {
@@ -43,7 +43,7 @@ function PageRoutes(){
         {
             path: "/contact",
             element: <Contact />
-        }
+        },
     ]) 
     return <Suspense fallback={<FullScreenLoader />}>{routes}</Suspense>;
 }

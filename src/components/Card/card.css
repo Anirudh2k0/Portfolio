@@ -1,5 +1,5 @@
 .project-card {
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color cubic-bezier(0.075, 0.82, 0.165, 1) ease-in-out;
   }
   
 .project-card:hover {
