@@ -20,13 +20,14 @@ export const papersInfo = [
         "venue": "Helathsec 2024, ACM conference"
     },
     {
+        "title": "Adaptive Virtual Reality Learning Environment with a Reinforcement Learning-driven Pedagogical Agent",
+        "status": "Accepted",
+        "venue": "IEE CCNC"
+    },
+    {
         "title": "RISE: Remote Instrumentation Science Environment for Learning-based Image Analytics",
         "status": "Submitted",
         "venue": "TSC Journal"
     },
-    {
-        "title": "Adaptive Virtual Reality Learning Environment with a Reinforcement Learning-driven Pedagogical Agent",
-        "status": "Submitted",
-        "venue": "IEE CCNC"
-    },
+    
 ]
