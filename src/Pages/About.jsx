@@ -92,37 +92,69 @@ function About() {
         </div>
       </Box>
 
-      <Box sx={{ display: 'flex', justifyContent: 'center', my: 2, px: 2 }}>
-        <Typography>
-          I worked for Cognizant Technological Solutions at Chennai, India as a Programmer Analyst Trainee where my responsibilities included:
-          <List>
-          <ListItem><Stack alignItems="center" direction="row">
-            <AnimatedIcon />Understand functional and non-functional application security requirements.
-          </Stack></ListItem>
-          <ListItem><Stack alignItems="center" direction="row">
-            <AnimatedIcon />Develop proof of concept.
-          </Stack></ListItem>
-          <ListItem><Stack alignItems="center" direction="row">
-            <AnimatedIcon />Create or update DIT(directory information tree) object class schema definition and indexes.
-          </Stack></ListItem>
-          <ListItem><Stack alignItems="center" direction="row">
-            <AnimatedIcon /> Develop Deployment instructions.
-          </Stack></ListItem>
-          <ListItem><Stack alignItems="center" direction="row">
-            <AnimatedIcon />Develop SDLC artifacts based on customer SDLC process.
-          </Stack></ListItem>
-          <ListItem><Stack alignItems="center" direction="row">
-            <AnimatedIcon />Develop POCs for solution design realization.
-          </Stack></ListItem>
-          </List>
+      <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', my: 4, px: 2 }}>
+        <Typography variant="h6" sx={{ fontWeight: 'bold', textAlign: 'center', mb: 1 }}>
+          Part-Time Research Assistant - Unity Developer
+        </Typography>
+        <Typography sx={{ fontStyle: 'italic', textAlign: 'center', color: 'text.secondary' }}>
+          University of Missouri - Columbia, Missouri | Nov 2024 - Present
+        </Typography>
+        <Typography sx={{ mt: 2 }}>
+          I am currently working as a Part-Time Research Assistant at the University of Missouri - Columbia under{' '}
+          <Link to="https://noahglaser.com/" sx={{ textDecoration: 'none', fontWeight: 'bold' }}>
+            Dr. Noah Glaser
+          </Link>. We are building an escape-room-based gamified scenario in VR to teach Cyber Defense to people on the neuro-divergent spectrum. 
+          I also developed a Pedagogical Agent that helps users in VR with tasks and ensures user immersion.
+        </Typography>
+      </Box>  
+
+      <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', my: 4, px: 2 }}>
+        <Typography variant="h6" sx={{ fontWeight: 'bold', textAlign: 'center', mb: 1 }}>
+          Graduate Research Assistant
+        </Typography>
+        <Typography sx={{ fontStyle: 'italic', textAlign: 'center', color: 'text.secondary' }}>
+          University of Missouri - Columbia, Missouri | Aug 2022 - Aug 2024
+        </Typography>
+        <Typography sx={{ mt: 2 }}>
+          As a Graduate Research Assistant at the University of Missouri - Columbia, I contributed to various research projects, IEEE transaction papers in the field of AI, microservices, immersive technologies.
+          You can view some of my projects <Link component={RouterLink} to="/projects" sx={{ fontWeight: 'bold' }}>here</Link>.
         </Typography>
       </Box>
 
-      <Box sx={{ display: 'flex', justifyContent: 'center', my: 2, px: 2 }}>
-        <Typography>
-          I am currently a graduate research assistant at the University of Missouri - Columbia. You can have a glance at few of my projects I did <Link component={RouterLink} to="/projects">here</Link>.
+      <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', my: 4, px: 2 }}>
+        <Typography variant="h6" sx={{ fontWeight: 'bold', textAlign: 'center', mb: 1 }}>
+          Programmer Analyst Trainee
         </Typography>
+        <Typography sx={{ fontStyle: 'italic', textAlign: 'center', color: 'text.secondary' }}>
+          Cognizant Technology Solutions, Chennai, India | Oct 2021 - Mar 2022
+        </Typography>
+        <Typography sx={{ mt: 2 }}>
+          I worked for Cognizant Technology Solutions as a Programmer Analyst Trainee, where I was responsible for the following tasks:
+        </Typography>
+        <List sx={{ pl: 3, mt: 2 }}>
+          <ListItem sx={{ display: 'flex', alignItems: 'center' }}>
+            <AnimatedIcon sx={{ mr: 2 }} /> Understand functional and non-functional application security requirements.
+          </ListItem>
+          <ListItem sx={{ display: 'flex', alignItems: 'center' }}>
+            <AnimatedIcon sx={{ mr: 2 }} /> Develop proof of concept (POC).
+          </ListItem>
+          <ListItem sx={{ display: 'flex', alignItems: 'center' }}>
+            <AnimatedIcon sx={{ mr: 2 }} /> Create or update DIT (Directory Information Tree) object class schema definition and indexes.
+          </ListItem>
+          <ListItem sx={{ display: 'flex', alignItems: 'center' }}>
+            <AnimatedIcon sx={{ mr: 2 }} /> Develop Deployment instructions.
+          </ListItem>
+          <ListItem sx={{ display: 'flex', alignItems: 'center' }}>
+            <AnimatedIcon sx={{ mr: 2 }} /> Develop SDLC artifacts based on customer SDLC process.
+          </ListItem>
+          <ListItem sx={{ display: 'flex', alignItems: 'center' }}>
+            <AnimatedIcon sx={{ mr: 2 }} /> Develop POCs for solution design realization.
+          </ListItem>
+        </List>
       </Box>
+
+
+      
     </AnimatedPage>
   );
 }
