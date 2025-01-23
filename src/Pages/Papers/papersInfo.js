@@ -26,8 +26,13 @@ export const papersInfo = [
     },
     {
         "title": "RISE: Remote Instrumentation Science Environment for Learning-based Image Analytics",
-        "status": "Submitted",
+        "status": "Rejected",
         "venue": "TSC Journal"
+    },
+    {
+        "title": "RISE: Remote Instrumentation Science Environment for Learning-based Image Analytics",
+        "status": "Submitted",
+        "venue": "IEEE THMS"
     },
     
 ]
